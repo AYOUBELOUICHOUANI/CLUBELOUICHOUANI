@@ -1,0 +1,137 @@
+body{
+	margin:0px;
+}
+#img{
+	width: 400px;
+	height: 400px;
+	position: relative;
+	left: 600px;
+	top: -400px;
+}
+
+.form{box-shadow: 5px 5px 10px white;
+	border-bottom: 2px solid red;
+	line-height: 40px;
+	position: relative;
+	left: 200px;
+	top: 100px;
+	background:transparent;
+	width: 300px;
+	height: 500px;
+	border-radius: 10px;
+	padding: 25px;
+
+	}
+.form input{
+	background:transparent;
+	height: 35px;
+	width: 240px;
+	border-bottom: 1px solid red;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	color :white;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: -100px;
+	font-family: sans-serif;
+}
+.form input:focus{
+	outline: none;
+
+}
+.form input:hover{
+	color: #990000 ;
+	background-color:#33ffff;
+}
+
+
+::placeholder{
+	background:transparent;
+	color :black;
+	font-family: arial;
+}
+.btnn{
+	width: 240px;
+	height: 40px;
+	background-color:red;
+	border:none;
+	margin-top: 30px;
+	border-radius: 10px; 
+	cursor: pointer;
+	color: white;
+	transition: 0.8s ease;
+font-family: arial;
+font-size: 20px;}
+.btnn:hover{
+	background-color: red;
+	color:red; 
+}
+#a{
+	font-size: 30px;
+	color: red;
+	font-family: arial;
+}#b{line-height: 20px;
+	position: relative;
+	right: 10px;
+
+	font-size: 20px;
+	color: black;
+	font-family: arial;
+}
+.e{
+	width: 150px;
+	height: 150px;
+	color:red;
+	background-color: red;
+	border-radius: 80%;
+	position: relative;
+	top: -380px;
+	left: 300px;
+	border: 1px solid red;
+
+	
+	font-size: 30px;
+	font-family: arial;
+}
+.p{
+	width: 0.5px;
+	height: 140px;
+	background-color:red;
+	position: relative;
+	top: -320px;
+	left: 80px;
+	border:1px solid ridge;
+	font-size: 30px;
+	color: red;
+}
+.k{
+	font-size: 40px;
+	color: red;
+	font-family: arial;
+	position: relative;
+	left:400px;
+	top: -560px;
+}
+.icon{
+	font-size: 60px;
+	color: red;
+}
+.icon a{
+    text-decoration: none;
+    color: #fff;
+}
+.icon ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+}
+.icon ion-icon:hover{
+    color: #0082e6;
+}
+
+	
+
+
+

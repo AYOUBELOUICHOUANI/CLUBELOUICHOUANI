@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/abonner.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+	<nav>
+		<img id="logo" src="img/LogoAyoub.png">
+		<ul>	
+			<li><a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/mini.html"target="_blanck">ACCUEIL</a></li>	
+			<li><a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/ABN.html"target="_blanck"> Our Pro</a></li>
+			<li><a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/planning.html"target="_blanck">PLANNING</a></li>
+			<li><a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/GALERIER.html"target="_blanck"> GALERIE</a></li>
+			<li><a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/bilon.html"target="_blanck"> MON BILAN</a></li>
+			
+		</ul>
+	</nav>
+	<div class="form" name="formule">
+		<p id="a" style="position: relative; top: -40px ; color:red">Reserv your card</p>
+		<input  id="btn1"  type="text " name="nom" placeholder="entre your first name ">
+		<input  id="btn2" type="text " name="prenom"placeholder="entre your last name ">
+		<input id="btn3" type="email " name="email"placeholder="entre your email ">
+		<input id="btn4" type="password " name="password"placeholder="entre your password ">
+		<input id="btnn" type="submit" onsubmit="test()" value="enter" >
+		<a id="NBV" href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/catre.html">choose your card</a>
+
+		<div class="icon">
+
+			<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+			<a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+			<a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+			<a href="#"><ion-icon name="logo-google"></ion-icon></a>
+		   
+		</div>
+</div>
+
+	<img id="img" src="img/image-3-1.png">
+	<button class="e">38<br>clubs</button>
+	<button class="e">300<br>Activitées</button> 
+	<button class="p"  ></button>
+	<p class="k"><b>7j/7</b><br><b>24h</b></p>
+	<footer class="FOOTER ">
+		<div class="container">
+			<div class="row">
+				<div class="footer-cool">
+					<h4>A PROPOSE</h4>
+					<ul class="FOT">
+						<li>
+							<a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/mini.html">ACCUEIL</a>
+						</li>
+						<li>
+							<a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/mini.html">CONCEPT</a>
+						</li>
+						<li>
+							<a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/activité.html">ACTIVITES</a>
+						</li>
+						<li>
+							<a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/coutch.html">COACHES</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-cool">
+					<h4>Nos servive</h4>
+					<ul class="FOT">
+						<li>
+							<a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/ABN.html">ABONNEMENTS</a>
+						</li>
+						<li>
+							<a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/planning.html">PLANNING</a>
+						</li>
+						<li>
+							<a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/GALERIER.html">GALERIE</a>
+						</li>
+						<li>
+							<a href="file:///C:/Users/me/Desktop/mini%20projet%20ayoub/bilon.html">MON BILAN</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-cool">
+					<h4>Contact us</h4>
+					<ul class="FOT">
+						<li>
+							<a href="#">ayyoubloui07@gmail.com</a>
+						</li>
+						<li>
+							<a href="#">saf01@gmail.com</a>
+						</li>
+						<li>
+							<a href="#">+212 610 17 65 40</a>
+						</li>
+						<li>
+							<a href="#">+212 534 35 35 24</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-cool">
+					<h4 id="follow">Nos réseaux</h4>
+					<div class="social-links">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</footer>
+     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	 <script>
+		 
+		 document.getElementById("btnn").onclick=function test(){
+			 if(document.getElementById("btn1").value==""||document.getElementById("btn2").value==""||document.getElementById("btn3").value==""){
+				 alert("tout les champs est obligatoire")
+				 return false
+			 } 
+			 let x=document.getElementById("btn1").value
+		     let xre=/\b[A-Z]{1}[a-z]{1,}/
+			 let val=xre.test(x)
+			let y=document.getElementById("btn2").value
+			let yre=/^[A-Z]{1}[a-z]{1,}/
+			let valy=yre.test(y)
+			let K=document.getElementById("btn3").value
+			let Kre=/\w+@\w+.(com|net)/g
+			let valK=Kre.test(K)
+			let s=document.getElementById("btn4").value
+			let sre=/(?=.*[A-Z])(?=.*[a-z])(?=.*\d)([\w]{8,16})/g
+			let vals=sre.test(s)
+			 if(val===false)
+			 {
+				 alert("le nome qui siziez et incoreect!!!")
+				 return false
+			 }
+			if (valy===false)
+			{
+			alert("le prenome qui siziez et incoreect!!!")
+			 return false
+			}
+			
+			if (valK===false)
+			{
+			alert("email  qui siziez et incoreect!!!")
+			return false
+			}
+			if (vals===false)
+			{
+			alert(" syntax mot de passe incorrect!!!")
+			return false
+			}	  	  
+			 else
+			 {
+			 return true
+			 }
+		}
+			
+	 </script>
+</body>
+</html>
